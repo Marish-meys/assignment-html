@@ -1,0 +1,104 @@
+17. Explain the difference between absolute and relative URLs when creating links.
+<ul>
+
+<li><strong>Absolute URL</strong></li>
+<li>An absolute URL provides the complete address to a resource on the web.</li>
+<li>It includes the protocol (http:// or https://), domain name, and  the complete file path.</li>
+
+
+ <li>Example:</li>
+<li><a href="https://www.example.com/about.html">About Us</a></li>
+ <li><strong>Characteristics</strong></li>
+<li>Points to a resource on a different website or a fully-qualified link on the same site.</li>
+
+<li>Useful when linking to external sites.</li>
+
+<li>Always works regardless of the current location of the page.</li>
+</ul>
+<ul>
+ <li><strong>Relative URL</strong></li>
+<li>A relative URL provides a path relative to the current page's location.</li>
+<li>It does not include the domain name or protocol.</li>
+<li>It can be a path to a file in the same directory, a subdirectory, or a parent directory.</li>
+
+ <li>Examples:</li>
+<li><!-- Link to a file in the same directory -->
+<a href="about.html">About Us</a></li>
+
+<li>><!-- Link to a file in a subdirectory -->
+<a href="pages/about.html">About Us</a></li>
+
+<li><!-- Link to a file in the parent directory -->
+<a href="../about.html">About Us</a></li><br>
+
+ <li><strong>Characteristics</strong></li>:
+
+<li> and easier to manage within a site.</li>
+
+<li>If you move the whole site, relative links still work.</li>
+
+<li>Depends on the current location of the HTML file.</li>
+</ul>
+
+<!--18. Create an HTML page with the following navigation links:
+ Home
+ About
+ Services
+ Contact-->
+
+<!--Use the &lt;target&gt; attribute to make one of the links open in a new tab.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKING AND NAVIGATION</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 1px; 
+        }
+        header {
+            background-color: hwb(175 1% 82%);
+            color: white;
+            text-align: center;
+            padding: 1px ;
+        }
+        nav {
+            background-color: hsl(139, 82%, 33%);
+            color: white;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        </style>
+</head>
+
+<body>
+    <HEAder>
+        <h1>Navigation Links</h1>
+        <nav>
+            <ul>
+                <ul>
+                    <li><a href="homepage.html">HOME</a></li>
+                    
+                </ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.example.com" target="_blank">External Link</a></li><!--absolute URL-->
+                
+            </ul>
+        </nav>
+    </HEAder>
+</body>
+</html>

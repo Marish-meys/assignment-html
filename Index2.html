@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements and Attributes</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">INTRODUCTION TO HTML</a></li>
+                
+            </ul>
+        </nav>
+    <h1>HTML Elements and Attributes</h1>
+    <h2>Importance and Examples</h2>
+
+    <h3>&lt;a&gt; – Anchor Element</h3>
+    <p>The <code>&lt;a&gt;</code> element is used to create hyperlinks, allowing users to navigate to other pages or resources.</p>
+    <p>Example:</p>
+    <a href="https://www.example.com" target="_blank">Visit Example</a>
+
+    <h3>&lt;img&gt; – Image Element</h3>
+    <p>The <code>&lt;img&gt;</code> element is used to embed images in a webpage.</p>
+    <p>Example:</p>
+    <img src=".//gallery/image.png" alt="Sample Image" width="300" height="200">
+
+    <h3>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; – List Elements</h3>
+    <p>The <code>&lt;ul&gt;</code> element creates an unordered list, <code>&lt;ol&gt;</code> creates an ordered list, and <code>&lt;li&gt;</code> defines list items.</p>
+    <p>Example:</p>
+    <p>Unordered List:</p>
+    <ul>
+        <li> BENZ</li>
+        <li>G wagon</li>
+        <li>SUV</li>
+    </ul>
+    <p>Ordered List:</p>
+    <ol>
+        <li>BMW</li>
+        <li>FORD</li>
+        <li>PICKUP TRUCKS</li>
+    </ol>
+
+    <h3>&lt;table&gt; – Table Element</h3>
+    <p>The <code>&lt;table&gt;</code> element is used to display data in a tabular format.</p>
+    <p>Example:</p>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <h3>&lt;div&gt; – Division Element</h3>
+    <p>The <code>&lt;div&gt;</code> element is a container used to group other elements and apply styles or layout.</p>
+    <p>Example:</p>
+    <div style="background-color: lightblue; padding: 10px;">
+        This is a div container.
+    </div>
+
+    <h3>&lt;span&gt; – Span Element</h3>
+    <p>The <code>&lt;span&gt;</code> element is an inline container used to apply styles or manipulate specific parts of text.</p>
+    <p>Example:</p>
+    <p>This is a <span style="color: red;">highlighted</span> word.</p>
+    <section>
+    <h3> <strong>Create an HTML table displaying the following data:</strong> </h3>
+    <table border="1">
+        <tr>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>COUNTRY</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>25</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>30</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Ahmed Naseer</td>
+            <td>28</td>
+            <td>Kenya</td>
+        </tr>
+    </table>
+    </section>
+    <section>
+    <h3> <strong>Create an HTML form that includes the following input fields:
+        <br>8. Add input validation to the form to ensure that all fields are filled before submission.
+    </strong> </h3>
+    <form action="/submit" method="POST">
+        <label for="name">FirstName:</label><br>
+        <input type="text" id="name" name="name"required minlength="2" maxlength="30"><br><br>
+        <label for="name">LastName:</label><br>
+        <input type="text" id="name" name="name"required minlength="2" maxlength="30"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label Gender:></label><br>
+        <label for="Male">Male:</label><br>
+        <input type="radio" id="Male" name="Male"required><br><br>
+        <label for="Female">Female:</label><br>
+        <input type="radio" id="Female" name="Female"><br><br>
+        
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+          <option value="">--Select Country--</option>
+          <option value="usa">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+          <option value="india">India</option>
+          <option value="kenya">Kenya</option>
+        </select><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"required min="10 "max="120"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"required min="8"><br><br>
+        <input type="submit" value="Submit">
+</body>
+</html>

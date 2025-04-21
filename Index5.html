@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            
+        }
+        nav {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        aside {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+
+        }
+        img {
+            width: 130px; /* Reduced image size */
+            height: 130px; /* Reduced image size */
+            border-radius: 50%; /* Circular image */
+            display: flesx;
+            justify-content: center;
+            object-fit: cover;
+            
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <p><img src="./gallery/log6.png" ></p>
+    </header>
+    <nav>
+        
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section>
+        <h2> <strong>the purpose of the following HTML5 semantic elements and provide an
+            example of how each is used:</strong> <br></h2>
+            <ul>
+
+          <li>  &lt;header&gt; Purpose: Represents introductory content, like a logo, site title, or navigation</li> 
+           <li>  &lt;footer&gt;Purpose: Defines footer content, usually containing copyright, contact info, or related links</li>
+           <li>  &lt;section&gt;Purpose: Groups related content together. Often used for thematic grouping within a page</li>
+           <li>  &lt;article&gt; Purpose: Represents self-contained content, like a blog post or news article.</li>
+            <li> &lt;aside&gt;Purpose: Contains content that's indirectly related to the main content (e.g., sidebars, tips, related links)<br> Example<br>.
+                <aside>
+                <h3>Related Links</h3>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Support</a></li>
+                </ul>
+              </aside>
+              </li>
+              <li>  &lt;nav&gt;Purpose: Defines a navigation section, typically containing links to other pages or sections within the same page.</li>
+        </ul>
+    </section>
+    <section>
+        <article>
+            <h2>Article 1</h2>
+            <p><strong>what is website development?</strong><br>
+
+                Website development is simply the creation, build and maintenance of a website. This includes markup (the language developers use to create websites, such as HTML), coding (the programming language), network configuration and CMS (content management system). 
+                
+                
+                Many use "web development" to describe the actual construction of websites. It includes what you find "under the hood," or on the back end of a website, as well as any coding needed for the visible part of your website, or the "front end."  <code>&lt;article&gt;</code> element.</p>
+        </article>
+        <article>
+            <h2>Article 2</h2>
+            <p><strong>Web development vs. web design <br> </strong>
+                Website design is the process of creating the look and feel of a website. This includes the layout, color scheme, typography, and overall visual aesthetics. Designers use tools like Adobe Photoshop, Sketch, or Figma to create mockups and prototypes of the website's design. They also consider user experience (UX) and user interface (UI) principles to ensure that the website is easy to navigate and visually appealing.
+                Web development and web design are two distinct but interconnected disciplines in the process of creating websites. Web development involves the technical implementation and functionality of a website. It encompasses the coding and programming required to bring the design to life. Web developers use technologies like HTML, CSS and JavaScript to build the user interface, while implementing back-end logic with programming languages like PHP, Python or Ruby. They may additionally tap into their familiarity with formats like XML files and JSON, which is often used for data interchange, to integrate data into the website. 
+                
+                
+                Web design, on the other hand, focuses on the visual aesthetics and user experience of a website. It involves crafting the layout, typography, color schemes, and overall visual appeal to create an engaging and intuitive user interface. Web designers may use tools like Photoshop, Illustrator and Figma to create mockups and find ways to improve the usability, accessibility and branding of a site. 
+                
+                
+                Across both fields, there are several types of AI that are changing up the game and that modern-day professionals will want to be aware of. </code>.</p>
+        </article>
+    </section>
+    <aside>
+        <h3>Related Links</h3>
+        <ul>
+            <li><a href="#link1">Related Link 1</a></li>
+            <li><a href="#link2">Related Link 2</a></li>
+            <li><a href="#link3">Related Link 3</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
